@@ -1,7 +1,7 @@
 # football_app_crud
 It is backend application using python fastapi with PostgreSQL database,
 
-# ⚽ Football Explorer API
+# Football Explorer API
 
 A full-stack application backend built with FastAPI and PostgreSQL to explore football teams, players, matches, and areas.
 
