@@ -37,8 +37,7 @@ requirements.txt
 
 ### 1. Clone the repository
 ```bash
-git clone <your_repo_url>
-cd <repo>
+git clone https://github.com/Abhiwolf/football_app_crud.git
 ```
 
 ### 2. Build and start services
