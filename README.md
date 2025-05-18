@@ -1,7 +1,7 @@
 # football_app_crud
 It is backend application using python fastapi with PostgreSQL database,
 
-# ⚽ Football Explorer API
+# Football Explorer API
 
 A full-stack application backend built with FastAPI and PostgreSQL to explore football teams, players, matches, and areas.
 
@@ -37,8 +37,7 @@ requirements.txt
 
 ### 1. Clone the repository
 ```bash
-git clone <your_repo_url>
-cd <repo>
+git clone https://github.com/Abhiwolf/football_app_crud.git
 ```
 
 ### 2. Build and start services
