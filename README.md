@@ -5,20 +5,20 @@ It is backend application using python fastapi with PostgreSQL database,
 
 A full-stack application backend built with FastAPI and PostgreSQL to explore football teams, players, matches, and areas.
 
-## 🚀 Features
+## Features
 - List and filter matches, teams, players
 - Query by area or team
 - Swagger documentation at `/docs`
 - Dockerized backend and PostgreSQL
 
-## 📦 Tech Stack
+## Tech Stack
 - FastAPI
 - PostgreSQL
 - SQLAlchemy
 - Docker
 - Swagger UI
 
-## 📁 Project Structure
+## Project Structure
 ```
 app/
 ├── crud.py
@@ -33,24 +33,33 @@ docker-compose.yml
 requirements.txt
 ```
 
-## 🛠 Setup Instructions
-
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Abhiwolf/football_app_crud.git
 ```
 
-### 2. Build and start services
-```bash
-docker-compose up --build
+### 2. Create python virtual env
+```
+create virtual env using .venv on vs code
 ```
 
-### 3. Run seed data
-```bash
-docker exec -it <backend_container_id> python seed.py
+### 3. Setup Instructions
+```
+ pip install -r requirements.txt
+ ```
+
+### 4. Run application 
+- # uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+### 5. Add seed data into database
+```
+python seed.py - it will add some data into databse 
+postgresql://postgres:mypassword@localhost:5432/football_db
+
 ```
 
-### 4. Open API Docs
+
+### 6. Open API Docs
 Visit [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ## ✅ API Endpoints
@@ -70,6 +79,3 @@ Visit [http://localhost:8000/docs](http://localhost:8000/docs)
 - Linting and testing setup recommended for production
 
 ---
-
-## Run application 
-- # uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
