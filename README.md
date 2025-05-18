@@ -62,16 +62,16 @@ postgresql://postgres:mypassword@localhost:5432/football_db
 ### 6. Open API Docs
 Visit [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## ✅ API Endpoints
+## API Endpoints
 - `GET /matches` — List all matches
 - `GET /teams` — List all teams
 - `GET /players/{id}` — Get player info
 - `GET /areas` — List all areas
 
-## ⚙️ Environment
-- DB user: `user`
-- DB password: `pass`
-- DB name: `football`
+## Environment
+- DB user: `postgres`
+- DB password: `mypassword`
+- DB name: `football_db`
 
 ## 📌 Notes
 - Filters via query params (e.g., `/teams?area=Spain`)
