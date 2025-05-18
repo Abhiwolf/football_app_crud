@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: football_db
+    ports:
+      - "5432:5432"
+  backend:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:mypassword@localhost:5432/football_db
